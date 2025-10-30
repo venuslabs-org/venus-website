@@ -13,9 +13,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Venus Labs",
+  title: {
+    default: "Venus Labs",
+    template: "%s | Venus Labs",
+  },
   description: "Building next‑gen creative tools and experiences.",
-  icons: { icon: "/favicon.ico" },
+  metadataBase: new URL("https://venuslabs.net"),
+  openGraph: {
+    title: "Venus Labs",
+    description: "Building next‑gen creative tools and experiences.",
+    url: "/",
+    siteName: "Venus Labs",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Venus Labs",
+    description: "Building next‑gen creative tools and experiences.",
+  },
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
