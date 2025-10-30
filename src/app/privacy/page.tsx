@@ -16,11 +16,11 @@ const styles = `
   .docs-page h2 { color: #e5e7eb; margin-top: 30px; }
   .docs-page h3 { color: #a1a1aa; margin-top: 20px; }
   .docs-page .last-updated { font-style: italic; color: #a1a1aa; margin-bottom: 30px; }
-  .docs-page .important { background-color: #292524; border: 1px solid #57534e; padding: 15px; border-radius: 8px; margin: 20px 0; }
-  .docs-page .contact-info { background-color: #0c0a09; border: 1px solid #27272a; padding: 15px; border-radius: 8px; margin-top: 30px; }
+  .docs-page .important { background-color: #1f2937; border: 1px solid #3f3f46; padding: 15px; border-radius: 8px; margin: 20px 0; }
+  .docs-page .contact-info { background-color: #111827; border: 1px solid #3f3f46; padding: 15px; border-radius: 8px; margin-top: 30px; }
   .docs-page .data-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-  .docs-page .data-table th, .docs-page .data-table td { border: 1px solid #27272a; padding: 12px; text-align: left; }
-  .docs-page .data-table th { background-color: #111827; }
+  .docs-page .data-table th, .docs-page .data-table td { border: 1px solid #3f3f46; padding: 12px; text-align: left; }
+  .docs-page .data-table th { background-color: #0b1220; }
 `;
 
 const html = `

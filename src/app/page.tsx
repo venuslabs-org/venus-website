@@ -5,9 +5,9 @@ export default function Home() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <div className="text-xl font-semibold">Venus</div>
           <nav className="hidden gap-6 text-sm md:flex">
-            <a href="#features" className="hover:text-black">Features</a>
-            <a href="#about" className="hover:text-black">About</a>
-            <a href="#contact" className="hover:text-black">Contact</a>
+            <a href="#features" className="hover:text-white">Features</a>
+            <a href="#about" className="hover:text-white">About</a>
+            <a href="#contact" className="hover:text-white">Contact</a>
           </nav>
         </div>
       </header>
@@ -17,7 +17,7 @@ export default function Home() {
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
               <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-                Venus — Social platform with ads and monetization
+                Venus — Social platform with real estate listings
               </h1>
               <p className="mt-4 max-w-prose text-lg text-zinc-400">
                 Share photos and videos, promote content with sponsored posts, and manage property listings — all with
@@ -39,11 +39,11 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="h-64 rounded-xl border border-zinc-800 bg-zinc-900 shadow-sm md:h-80" />
+            <div className="h-64 rounded-xl border border-zinc-700 bg-zinc-900 shadow-sm md:h-80" />
           </div>
         </section>
 
-        <section id="features" className="border-t border-zinc-800 py-16">
+        <section id="features" className="border-t border-zinc-700 py-16">
           <div className="grid gap-6 md:grid-cols-3">
             <Feature title="Social content platform" desc="Create and engage with photo and video posts with modern interactions." />
             <Feature title="Ads & monetization" desc="Run sponsored content and promotions; creators access analytics and payouts." />
@@ -56,7 +56,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="border-t border-zinc-800 py-16">
+        <section id="about" className="border-t border-zinc-700 py-16">
           <h2 className="text-2xl font-semibold">About Venus</h2>
           <p className="mt-3 max-w-prose text-zinc-400">
             Venus is a social media app focused on premium content, creator monetization,
@@ -66,13 +66,13 @@ export default function Home() {
           </p>
         </section>
 
-        <section id="contact" className="border-t border-zinc-800 py-16">
+        <section id="contact" className="border-t border-zinc-700 py-16">
           <h2 className="text-2xl font-semibold">Contact</h2>
           <p className="mt-3 text-zinc-400">Email us at <a className="underline" href="mailto:admin@venuslabs.net">admin@venuslabs.net</a></p>
         </section>
       </main>
 
-      <footer className="border-t border-zinc-800 py-10 text-center text-sm text-zinc-400">
+      <footer className="border-t border-zinc-700 py-10 text-center text-sm text-zinc-400">
         <div className="mx-auto max-w-6xl px-6">
           <div className="flex flex-col items-center gap-3 md:flex-row md:justify-between">
             <span>© {new Date().getFullYear()} Venus Technologies, Inc</span>
@@ -89,7 +89,7 @@ export default function Home() {
 
 function Feature({ title, desc }: { title: string; desc: string }) {
   return (
-    <div className="rounded-lg border border-zinc-800 bg-zinc-900 p-6 shadow-sm">
+    <div className="rounded-lg border border-zinc-700 bg-zinc-900 p-6 shadow-sm">
       <h3 className="font-medium">{title}</h3>
       <p className="mt-2 text-sm text-zinc-400">{desc}</p>
     </div>
