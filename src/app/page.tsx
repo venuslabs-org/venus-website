@@ -17,11 +17,11 @@ export default function Home() {
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
               <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-                Build, create, and share with Venus Labs
+                Venus — Social platform with ads and monetization
               </h1>
-              <p className="mt-4 max-w-prose text-lg text-zinc-600">
-                We craft modern experiences for creators and communities. This
-                site is the starting point—fast, secure, and ready to scale.
+              <p className="mt-4 max-w-prose text-lg text-zinc-400">
+                Share photos and videos, promote content with sponsored posts, and manage property listings — all with
+                creator-first analytics and tools.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
@@ -45,17 +45,24 @@ export default function Home() {
 
         <section id="features" className="border-t border-zinc-800 py-16">
           <div className="grid gap-6 md:grid-cols-3">
-            <Feature title="Fast by default" desc="Deployed on a global edge network for instant loads." />
-            <Feature title="Accessible & responsive" desc="Works beautifully on every device and input." />
-            <Feature title="Built to scale" desc="Modern architecture ready for growth and new products." />
+            <Feature title="Social content platform" desc="Create and engage with photo and video posts with modern interactions." />
+            <Feature title="Ads & monetization" desc="Run sponsored content and promotions; creators access analytics and payouts." />
+            <Feature title="Property listings" desc="Publish and discover real estate content with social engagement built-in." />
+          </div>
+          <div className="mt-6 grid gap-6 md:grid-cols-3">
+            <Feature title="Messaging & notifications" desc="Stay connected with DMs, follows, and real‑time notifications." />
+            <Feature title="Creator tools" desc="Promote management, performance insights, and audience growth tooling." />
+            <Feature title="Internationalization" desc="Multi-language foundation for global audiences from day one." />
           </div>
         </section>
 
         <section id="about" className="border-t border-zinc-800 py-16">
-          <h2 className="text-2xl font-semibold">About Venus Technologies</h2>
+          <h2 className="text-2xl font-semibold">About Venus</h2>
           <p className="mt-3 max-w-prose text-zinc-400">
-            Venus Technologies, Inc is building the next generation of creative
-            tooling and social experiences. Follow along as we launch.
+            Venus is a social media app focused on premium content, creator monetization,
+            and performant ad experiences. Our stack spans iOS native with Firebase,
+            Algolia search, Stripe payments, and a strong testing culture across unit,
+            integration, E2E, and performance.
           </p>
         </section>
 
