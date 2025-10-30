@@ -33,13 +33,6 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      // Canonical host: redirect www -> apex
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.venuslabs.net" }],
-        destination: "https://venuslabs.net/:path*",
-        permanent: true,
-      },
       { source: "/privacy.html", destination: "/privacy", permanent: true },
       { source: "/terms.html", destination: "/terms", permanent: true },
     ];
