@@ -1,65 +1,81 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="min-h-screen bg-gradient-to-b from-white to-zinc-50 text-zinc-900">
+      <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-zinc-200">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <div className="text-xl font-semibold">Venus Labs</div>
+          <nav className="hidden gap-6 text-sm md:flex">
+            <a href="#features" className="hover:text-black">Features</a>
+            <a href="#about" className="hover:text-black">About</a>
+            <a href="#contact" className="hover:text-black">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main className="mx-auto max-w-6xl px-6">
+        <section className="py-24 md:py-32">
+          <div className="grid items-center gap-12 md:grid-cols-2">
+            <div>
+              <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
+                Build, create, and share with Venus Labs
+              </h1>
+              <p className="mt-4 max-w-prose text-lg text-zinc-600">
+                We craft modern experiences for creators and communities. This
+                site is the starting point—fast, secure, and ready to scale.
+              </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center rounded-md bg-black px-5 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-zinc-900"
+                >
+                  Get in touch
+                </a>
+                <a
+                  href="#features"
+                  className="inline-flex items-center justify-center rounded-md border border-zinc-300 px-5 py-3 text-sm font-medium text-zinc-800 hover:bg-zinc-100"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+            <div className="h-64 rounded-xl border border-zinc-200 bg-white shadow-sm md:h-80" />
+          </div>
+        </section>
+
+        <section id="features" className="border-t border-zinc-200 py-16">
+          <div className="grid gap-6 md:grid-cols-3">
+            <Feature title="Fast by default" desc="Deployed on a global edge network for instant loads." />
+            <Feature title="Accessible & responsive" desc="Works beautifully on every device and input." />
+            <Feature title="Built to scale" desc="Modern architecture ready for growth and new products." />
+          </div>
+        </section>
+
+        <section id="about" className="border-t border-zinc-200 py-16">
+          <h2 className="text-2xl font-semibold">About Venus Technologies</h2>
+          <p className="mt-3 max-w-prose text-zinc-600">
+            Venus Technologies, Inc is building the next generation of creative
+            tooling and social experiences. Follow along as we launch.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        </section>
+
+        <section id="contact" className="border-t border-zinc-200 py-16">
+          <h2 className="text-2xl font-semibold">Contact</h2>
+          <p className="mt-3 text-zinc-600">Email us at <a className="underline" href="mailto:admin@venuslabs.net">admin@venuslabs.net</a></p>
+        </section>
       </main>
+
+      <footer className="border-t border-zinc-200 py-10 text-center text-sm text-zinc-500">
+        © {new Date().getFullYear()} Venus Technologies, Inc
+      </footer>
+    </div>
+  );
+}
+
+function Feature({ title, desc }: { title: string; desc: string }) {
+  return (
+    <div className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm">
+      <h3 className="font-medium">{title}</h3>
+      <p className="mt-2 text-sm text-zinc-600">{desc}</p>
     </div>
   );
 }

@@ -1,3 +1,27 @@
+## Venus Labs Website
+
+Modern website built with Next.js App Router, TypeScript, Tailwind CSS.
+
+### What’s included
+- App Router (`src/app`)
+- TypeScript + ESLint (Next config)
+- Tailwind CSS
+- Responsive, accessible landing page
+
+### Deploying
+- Recommended: connect this repo to Vercel and import the project.
+- On every push to `main`, Vercel will build and deploy automatically.
+
+### Domain
+- After the project is on Vercel, add domain `venuslabs.net` in Vercel → Domains.
+- In Squarespace domain settings, update DNS to the Vercel records shown.
+- Transfer the domain later if desired.
+
+### Customize
+- Edit `src/app/page.tsx` for content.
+- Update metadata in `src/app/layout.tsx`.
+- Update colors/typography in `src/app/globals.css` or add components.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
