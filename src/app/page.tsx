@@ -3,7 +3,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-white to-zinc-50 text-zinc-900">
       <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-zinc-200">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <div className="text-xl font-semibold">Venus Labs</div>
+          <div className="text-xl font-semibold">Venus</div>
           <nav className="hidden gap-6 text-sm md:flex">
             <a href="#features" className="hover:text-black">Features</a>
             <a href="#about" className="hover:text-black">About</a>
@@ -26,7 +26,8 @@ export default function Home() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center rounded-md bg-black px-5 py-3 text-sm font-medium text-white shadow-sm transition-colors hover:bg-zinc-900"
+                  className="inline-flex items-center justify-center rounded-md px-5 py-3 text-sm font-medium text-white shadow-sm transition-colors"
+                  style={{ backgroundColor: "var(--venus-primary)" }}
                 >
                   Get in touch
                 </a>
@@ -65,7 +66,15 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-zinc-200 py-10 text-center text-sm text-zinc-500">
-        © {new Date().getFullYear()} Venus Technologies, Inc
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="flex flex-col items-center gap-3 md:flex-row md:justify-between">
+            <span>© {new Date().getFullYear()} Venus Technologies, Inc</span>
+            <div className="flex items-center gap-4">
+              <a className="hover:underline" href="https://jackie-qin.github.io/venus-legal-docs/privacy.html" target="_blank" rel="noopener noreferrer">Privacy</a>
+              <a className="hover:underline" href="https://jackie-qin.github.io/venus-legal-docs/terms.html" target="_blank" rel="noopener noreferrer">Terms</a>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   );

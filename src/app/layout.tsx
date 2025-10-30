@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
@@ -14,23 +15,23 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Venus Labs",
-    template: "%s | Venus Labs",
+    default: "Venus",
+    template: "%s | Venus",
   },
-  description: "Building next‑gen creative tools and experiences.",
+  description: "A social platform for content, listings, and creator monetization.",
   metadataBase: new URL("https://venuslabs.net"),
   openGraph: {
-    title: "Venus Labs",
-    description: "Building next‑gen creative tools and experiences.",
+    title: "Venus",
+    description: "A social platform for content, listings, and creator monetization.",
     url: "/",
-    siteName: "Venus Labs",
+    siteName: "Venus",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Venus Labs",
-    description: "Building next‑gen creative tools and experiences.",
+    title: "Venus",
+    description: "A social platform for content, listings, and creator monetization.",
   },
   icons: {
     icon: "/favicon.svg",
@@ -45,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>
