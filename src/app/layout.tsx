@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -49,6 +50,7 @@ export default function RootLayout({
         className={`${inter.variable} ${geistMono.variable} antialiased bg-black text-zinc-100`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
