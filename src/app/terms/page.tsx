@@ -128,10 +128,19 @@ const html = `
 
 export default function TermsPage() {
   return (
-    <main className="mx-auto max-w-6xl px-6 py-12">
-      <style dangerouslySetInnerHTML={{ __html: styles }} />
-      <div className="docs-page" dangerouslySetInnerHTML={{ __html: html }} />
-    </main>
+    <div className="min-h-screen">
+      <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-black/60 border-b border-zinc-800">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <a href="/" className="text-xl font-semibold hover:text-white transition-colors">
+            Venus
+          </a>
+        </div>
+      </header>
+      <main className="mx-auto max-w-6xl px-6 py-12">
+        <style dangerouslySetInnerHTML={{ __html: styles }} />
+        <div className="docs-page" dangerouslySetInnerHTML={{ __html: html }} />
+      </main>
+    </div>
   );
 }
 
