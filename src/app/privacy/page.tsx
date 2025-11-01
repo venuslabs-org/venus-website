@@ -5,22 +5,111 @@ export const metadata = {
 
 const styles = `
   body.docs-page {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #e5e7eb; /* zinc-200 */
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.7;
+    color: #d4d4d8; /* zinc-300 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.01em;
   }
-  .docs-page h1 { color: #f4f4f5; border-bottom: 2px solid #6d28d9; padding-bottom: 10px; }
-  .docs-page h2 { color: #e5e7eb; margin-top: 30px; }
-  .docs-page h3 { color: #a1a1aa; margin-top: 20px; }
-  .docs-page .last-updated { font-style: italic; color: #a1a1aa; margin-bottom: 30px; }
-  .docs-page .important { background-color: #1f2937; border: 1px solid #3f3f46; padding: 15px; border-radius: 8px; margin: 20px 0; }
-  .docs-page .contact-info { background-color: #111827; border: 1px solid #3f3f46; padding: 15px; border-radius: 8px; margin-top: 30px; }
-  .docs-page .data-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-  .docs-page .data-table th, .docs-page .data-table td { border: 1px solid #3f3f46; padding: 12px; text-align: left; }
-  .docs-page .data-table th { background-color: #0b1220; }
+  .docs-page h1 { 
+    color: #ffffff; 
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  .docs-page h2 { 
+    color: #ffffff; 
+    font-size: 1.875rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  .docs-page h3 { 
+    color: #e4e4e7; 
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .docs-page p {
+    color: #a1a1aa; /* zinc-400 */
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  .docs-page ul, .docs-page ol {
+    color: #a1a1aa;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+  .docs-page li {
+    margin-bottom: 0.5rem;
+  }
+  .docs-page strong {
+    color: #e4e4e7;
+    font-weight: 600;
+  }
+  .docs-page .last-updated { 
+    font-style: italic; 
+    color: #71717a; /* zinc-500 */
+    margin-bottom: 2rem;
+    font-size: 0.9375rem;
+  }
+  .docs-page .important { 
+    background-color: #18181b; /* zinc-900 */
+    border: 1px solid #3f3f46; /* zinc-700 */
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+  }
+  .docs-page .important strong {
+    color: #ffffff;
+  }
+  .docs-page .contact-info { 
+    background-color: #18181b; /* zinc-900 */
+    border: 1px solid #3f3f46; /* zinc-700 */
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+  }
+  .docs-page .contact-info a {
+    color: #60a5fa; /* blue-400 */
+    text-decoration: underline;
+  }
+  .docs-page .contact-info a:hover {
+    color: #93c5fd; /* blue-300 */
+  }
+  .docs-page .data-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 2rem 0; 
+    border: 1px solid #3f3f46;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .docs-page .data-table th, .docs-page .data-table td { 
+    border: 1px solid #3f3f46; 
+    padding: 1rem; 
+    text-align: left;
+  }
+  .docs-page .data-table th { 
+    background-color: #18181b;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  .docs-page .data-table td {
+    color: #a1a1aa;
+  }
+  .docs-page em {
+    color: #71717a;
+    font-style: italic;
+  }
 `;
 
 const html = `
@@ -165,18 +254,34 @@ const html = `
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-black">
       <header className="sticky top-0 z-20 backdrop-blur supports-[backdrop-filter]:bg-black/60 border-b border-zinc-800">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="/" className="text-xl font-semibold hover:text-white transition-colors">
+          <a href="/" className="text-lg font-medium tracking-tight text-white hover:text-blue-400 transition-colors">
             Venus
           </a>
+          <nav className="hidden gap-8 text-sm md:flex">
+            <a href="/#features" className="text-zinc-400 hover:text-blue-400 transition-colors font-medium">Features</a>
+            <a href="/#about" className="text-zinc-400 hover:text-blue-400 transition-colors font-medium">About</a>
+            <a href="/#contact" className="text-zinc-400 hover:text-blue-400 transition-colors font-medium">Contact</a>
+          </nav>
         </div>
       </header>
-      <main className="mx-auto max-w-6xl px-6 py-12">
+      <main className="mx-auto max-w-4xl px-6 py-16">
         <style dangerouslySetInnerHTML={{ __html: styles }} />
         <div className="docs-page" dangerouslySetInnerHTML={{ __html: html }} />
       </main>
+      <footer className="border-t border-zinc-700 py-10 text-center text-sm text-zinc-300">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="flex flex-col items-center gap-3 md:flex-row md:justify-between">
+            <span>© {new Date().getFullYear()} Venus Technologies, Inc</span>
+            <div className="flex items-center gap-4">
+              <a className="text-zinc-300 hover:text-blue-400 hover:underline transition-colors" href="/privacy">Privacy</a>
+              <a className="text-zinc-300 hover:text-blue-400 hover:underline transition-colors" href="/terms">Terms</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
