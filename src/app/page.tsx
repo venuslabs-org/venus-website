@@ -16,7 +16,7 @@ export default function Home() {
         <section className="py-24 md:py-32">
           <div className="grid items-center gap-12 md:grid-cols-2">
             <div>
-              <h1 className="text-5xl font-semibold tracking-tight md:text-6xl lg:text-7xl bg-gradient-to-br from-white via-blue-200 to-blue-400 bg-clip-text text-transparent leading-tight">
+              <h1 className="text-5xl font-semibold tracking-tight md:text-6xl lg:text-7xl bg-gradient-to-br from-white via-purple-200 to-purple-400 bg-clip-text text-transparent leading-tight">
                 Venus — Social platform with real estate listings
               </h1>
               <p className="mt-6 max-w-prose text-xl text-zinc-400 leading-relaxed">
