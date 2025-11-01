@@ -121,7 +121,7 @@ const html = `
     <div class="contact-info">
         <h2>12. Contact Information</h2>
         <p>If you have questions about these Terms, please contact us at:</p>
-        <p>Email: legal@venus.app<br/>Website: https://venuslabs.net/</p>
+        <p>Email: legal@venuslabs.net<br/>Website: https://venuslabs.net/</p>
     </div>
     <p><em>By using Venus, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.</em></p>
 `;

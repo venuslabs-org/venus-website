@@ -157,10 +157,8 @@ const html = `
     <h2>10. Contact Us</h2>
     <div class="contact-info">
         <p>If you have questions about this Privacy Policy or our data practices, please contact us at:</p>
-        <p>Email: privacy@venus.app<br/>Website: https://venuslabs.net/</p>
+        <p>Email: privacy@venuslabs.net<br/>Website: https://venuslabs.net/</p>
         <p><strong>Analytics Disclosure:</strong> We use privacy-friendly, cookie-less analytics to measure basic usage and performance. No personal data is sold or used for cross-site tracking.</p>
-        <h3>Data Protection Officer</h3>
-        <p>For privacy-related concerns, you can also contact our Data Protection Officer at:<br/>Email: dpo@venus.app</p>
     </div>
     <p><em>This Privacy Policy is effective as of the date listed above and applies to all information collected by Venus.</em></p>
 `;

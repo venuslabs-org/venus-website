@@ -68,7 +68,10 @@ export default function Home() {
 
         <section id="contact" className="border-t border-zinc-700 py-16">
           <h2 className="text-2xl font-semibold">Contact</h2>
-          <p className="mt-3 text-zinc-400">Email us at <a className="underline" href="mailto:admin@venuslabs.net">admin@venuslabs.net</a></p>
+          <div className="mt-3 space-y-2 text-zinc-400">
+            <p>For general inquiries: <a className="underline hover:text-white transition-colors" href="mailto:contact@venuslabs.net">contact@venuslabs.net</a></p>
+            <p>For support: <a className="underline hover:text-white transition-colors" href="mailto:support@venuslabs.net">support@venuslabs.net</a></p>
+          </div>
         </section>
       </main>
 
